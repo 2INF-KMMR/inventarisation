@@ -1,2 +1,2 @@
 # inventarisation
-Product management
+A product management project
