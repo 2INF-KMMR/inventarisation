@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter-Bold.ttf');
+}
+*{
+    -fx-primary-color: #BD00FF;
+    -fx-secondary-color: #aa1bde;
+    -fx-bg-color: #222121;
+    -fx-bg-secondary-color: #262525;
+}
+.root {
+    -fx-font-family: 'Inter';
+    -fx-background-color: -fx-bg-color;
+}
+
+.sidebar {
+    -fx-background-color: -fx-bg-secondary-color;
+}
+.content {
+    -fx-background-color: -fx-bg-secondary-color;
+}
+
+
+.nav-button{
+    -fx-content-display: left;
+    -fx-alignment: baseline-left;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+    -fx-padding:6;
+}
+
+.my-button{
+    -fx-text-fill: white;
+}
+.my-button, .menu-button{
+    -fx-content-display: left;
+    -fx-alignment: baseline-left;
+    -fx-background-color: -fx-primary-color;
+
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+
+    -fx-padding:6;
+}
+
+.my-button:hover{
+    -fx-background-color: -fx-secondary-color;
+    -fx-cursor: hand;
+}
+.nav-button:hover{
+    -fx-cursor: hand;
+}
+.separator {
+    -fx-padding: 0 0 10 0;
+}
+.separator .line{
+    -fx-border-color: null;
+    -fx-pref-height: 2;
+}
+.nav-button-clicked, .separator .line{
+    -fx-background-color: -fx-primary-color;
+}
+.nav-title-container{
+    -fx-min-width: 260;
+    -fx-pref-height: 75;
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.text-box-area {
+    -fx-font-family: Consolas;
+    -fx-text-fill: white;
+    -fx-display-caret:true;
+    -fx-highlight-fill: -fx-primary-color;
+    -fx-border-width:1;
+    -fx-border-color:-fx-primary-color;
+    -fx-font-family: 'Inter';
+    -fx-font-size: 9pt;
+}
+
+.text-box-area .scroll-bar:vertical {
+    -fx-background-color: -fx-bg-secondary-color;
+}
+
+.text-box-area .content{
+    -fx-padding: 8;
+}
+
+.box-label {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+.text-field {
+    -fx-text-fill:white;
+    -fx-background-color: -fx-bg-secondary-color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-width:2;
+    -fx-border-color:-fx-primary-color;
+}
